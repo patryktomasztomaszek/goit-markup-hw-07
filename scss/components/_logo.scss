@@ -1,0 +1,19 @@
+.logo {
+  align-self: center;
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+  letter-spacing: 0.03em;
+  &--left-side {
+    color: $font-color2;
+  }
+  &--right-side {
+    &-header {
+      color: $font-color6;
+    }
+    &-footer {
+      color: $font-color4;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+  align-items: center;
+  height: 80px;
+  .header__logo {
+    align-self: center;
+    font-family: Raleway, serif;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+    letter-spacing: 0.03em;
+    &--left {
+        color: $font-color2;
+
+    }
+    &--right {
+        color:$font-color6;
+    }
+  }
+  .header__menu {
+      .menu__item {
+        align-self: center;
+        .menu__link {
+            color: $font-color1;
+        }
+      }
+  }
+  .header__contact { 
+    .contact__item {
+    margin-right: 50px;
+  letter-spacing: $letter-spacing1;;
+  align-content: center;
+  }
+  .contact__link {
+
+  }}
+ 
+}
