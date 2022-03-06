@@ -1,4 +1,4 @@
-/* RESET */
+/* Style reset */
 h1,
 h2,
 h3,
@@ -7,18 +7,25 @@ h5,
 h6,
 p,
 ul,
-ol {
+ol,
+li {
   margin: 0;
   padding: 0;
 }
 
+ul,
+ol,
+li,
 .list {
   list-style: none;
 }
-/* RESET END */
-
+/* Style reset END */
+/* Global */
 body {
-  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family1;
+  color: $font-color1;
 }
 
 .container {
@@ -27,27 +34,32 @@ body {
   margin: 0 auto;
 }
 
-.section {
+section {
   padding: 94px 0;
 }
 
-.header_1 {
-  color: white;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  letter-spacing: $letter-spacing2;
 }
 
-h2,
-h3,
+h3 {
+  font-size: $font-size1;
+  font-weight: bold;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  letter-spacing: $letter-spacing2;
+}
+
 p {
-  letter-spacing: 0.03em;
-}
-
-img,
-label {
-  display: block;
+  font-size: $font-size1;
+  color: $font-color3;
+  line-height: 1.71;
+  letter-spacing: $letter-spacing2;
 }
 
 .button {
@@ -55,16 +67,46 @@ label {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  background-color: #f5f4fa;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.62;
+  background-color: $bg-color3;
+  transition: $transition;
   &:hover,
   &:focus {
-    background-color: #2196f3;
+    background-color: $button-bg-color2;
+    color: $font-color4;
+    box-shadow: 0px 3px 2px 0px #0000001f;
+  }
+}
+
+img,
+label {
+  display: block;
+}
+.link {
+  position: relative;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: #2196f3;
+  }
+}
+
+.logo {
+  align-self: center;
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+  letter-spacing: 0.03em;
+  &__left-side {
+    color: #2196f3;
+  }
+  &__right-side--header {
+    color: #2f303a;
+  }
+  &__right-side--footer {
     color: #ffffff;
-    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-      0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
